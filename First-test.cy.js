@@ -12,7 +12,7 @@ it("Questions No 1 To 3", () => {
 })
 
 it("Questions No 5", () => {
-    cy.request('post', 'https://jsonplaceholder.typicode.com/todos', { "title": "foo", "body": "bar", "bar": "1" })
+    cy.request('post', 'https://jsonplaceholder.typicode.com/todos', { "title": "foo", "body": "bar", "userId": "1" })
         .its('status')
         .should('eq', 201)
 
